@@ -26,25 +26,85 @@
             padding-top: 10px;
         }
 
-        #nav{
+        #nav {
             width: 100%;
             height: 100px;
-            border: 1px solid red;
+            border: 0px solid red;
             display: flex;
+            position: sticky;
+            top: 0;
+            left: 0;
             background-color: rgb(247, 250, 247);
-       }
-        #nav>div{
+        }
+
+        #nav>div {
             width: 25%;
             height: 100%;
             margin: auto;
             display: flex;
-            border: 1px solid red;
-       }
+            border: 0px solid red;
+        }
 
-       .nav_cont{
-        display: flex;
-       }
+        .nav_cont {
+            display: flex;
+            justify-content: space-evenly;
+        }
 
+        .nav_cont>div {
+            width: 20%;
+            border: 0px solid red;
+        }
+
+        #green {
+            width: 100%;
+            height: 900px;
+            border: 0px solid red;
+            background-image: url(https://images.everydayhealth.com/images/go-green-for-better-health-00-1440x810.jpg);
+            background-size: 100%;
+        }
+
+        #green>div {
+            border: 0px solid red;
+            cursor: pointer;
+            box-sizing: border-box;
+            font-style: normal;
+            font-weight: 300;
+            letter-spacing: .02em;
+            text-transform: uppercase;
+            font-size: 2.4em;
+            margin-left: 55px;
+            padding: 30px;
+            color: rgb(245, 23, 23);
+            background: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/red-ribbon.png?v=1599479875) no-repeat left center transparent;
+            background-size: 100% 100%;
+            line-height: 1.2;
+            color: #d7d5d1;
+            width: 47%;
+        }
+
+        #silver {
+            background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456);
+            width: 100%;
+            background-size: 100%;
+            height: 200vh;
+        }
+
+        .Button {
+            text-align: center;
+            font-size: 25px;
+            padding: 10px;
+            background-color: #fbbc34;
+            color: #fff;
+            border-radius: 35px;
+            width: 150px;
+            margin-left: 55px;
+            border-color: #fbbc34;
+        }
+
+        #silver>div{
+            
+
+        }
     </style>
 </head>
 
@@ -55,18 +115,100 @@
         </p>
     </div>
 
-    <div  id="nav">
+    <div id="nav">
         <div class="nav_cont">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <select style="   
+                border: none; 
+                text-decoration: none;
+                display: inline-block;
+                height: 70px;
+                margin-left: 40px;
+
+                font-family: PT Sans;
+                font-size: 1.17em;
+                color: #000;
+                " name="" id="">
+                    <option value="">SHOP</option>
+                    <option value="">ALL FRUITS</option>
+                    <option value="">ALL VEGGIES</option>
+                    <option value="">FRESH CUTS</option>
+                    <option value=""> FRUIT COMBOS</option>
+                </select>
+            </div>
+            <div>
+                <select style=" border: none; 
+                text-decoration: none;
+                display: inline-block;
+                height: 70px;
+                margin-left: 30px;
+                font-family: PT Sans;
+                font-size: 1.17em;
+                color: #000;" name="" id="">
+                    <option value="">LEARN</option>
+                    <option value="">OUR STORY</option>
+                    <option value="">WHY KIMALE</option>
+                    <option value="">TRANCEBILITY</option>
+                    <option value=""> BEYOUND</option>
+                </select>
+
+
+            </div>
+            <div>
+
+                <a style="  
+                text-decoration: none;
+                padding-left: 13px;
+                padding-right: 13px;
+                height: 70px;
+                line-height: 70px;
+                font-family: PT Sans;
+                font-size: 1.17em;
+                color: #000;
+                " href="">
+                    GROW
+                </a>
+            </div>
         </div>
         <div>
-            <img style="width: 40%;align-items: center ;margin: auto; " src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1614326029" alt="">
+            <img style="width: 40%;align-items: center ;margin: auto; "
+                src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1614326029" alt="">
         </div>
-        <div></div>
+        <div>
+
+        </div>
     </div>
 
+    <div id="green">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+            <h2 style="font-family:cursive;">
+                Can't Keep Calm<br>
+
+                <span>Kimaye Veggies now LIVE! </span>
+            </h2>
+        </div>
+        <br>
+        <button class="Button">
+            Shop Now
+        </button>
+
+
+
+    </div>
+
+    <div id="silver">
+        <div></div>
+    </div>
 </body>
 
 </html>
