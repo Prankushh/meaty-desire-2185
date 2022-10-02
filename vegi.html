@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #top_sticky_div {
+            width: 100%;
+            height: 50px;
+            background-color: #437111;
+        }
+
+        #top_sticky_div>p {
+            color: white;
+            text-align: center;
+            font-size: x-large;
+            padding-top: 10px;
+        }
+
+        #nav {
+            width: 100%;
+            height: 100px;
+            border: 0px solid red;
+            display: flex;
+            position: sticky;
+            top: 0;
+            border-radius: 0px 0px 50px 50px;
+            left: 0;
+            background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456);
+
+        }
+
+
+        #nav>div {
+            width: 25%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            border: 0px solid red;
+        }
+
+        .nav_cont {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .nav_cont>div {
+            width: 20%;
+            border: 0px solid red;
+        }
+
+        #grey {
+            background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456);
+            width: 100%;
+            background-size: 100%;
+            height: auto;
+        }
+
+        #main {
+            width: 80%;
+            height: 2000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4);
+            gap: 60px;
+            border: 0px solid red;
+        }
+
+        #main>div {
+            width: auto;
+            margin: auto;
+            border: 0px solid red;
+        }
+
+        .boderbox {
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.4s all ease-in-out;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .boderbox:hover {
+            transform: scale(1.1);
+        }
+
+
+        .p_tag {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        @media only screen and (max-width:800px) {
+            #main {
+            
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4);
+           
+        }
+        }
+
+        @media only screen and (max-width:500px) {
+            #main {
+            
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4);
+           
+        }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top_sticky_div">
+        <p>
+            Delivering in Mumbai, Delhi and Gurugram | Same day delivery!
+        </p>
+    </div>
+
+    <div id="nav">
+        <div class="nav_cont">
+            <div>
+                <select style="   
+                    border: none; 
+                    display: inline-block;
+                    height: 70px;
+                    background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456);
+    
+                    margin-left: 40px;
+                    font-family: PT Sans;
+                    font-size: 1.17em;
+                    color: #000;
+                    " name="" id="">
+                    <option value="">SHOP</option>
+                    <option value="">ALL FRUITS</option>
+                    <option value="">ALL VEGGIES</option>
+                    <option value="">FRESH CUTS</option>
+                    <option value=""> FRUIT COMBOS</option>
+                </select>
+            </div>
+            <div>
+                <select style=" border: none; 
+                    text-decoration: none;
+                    display: inline-block;
+                    height: 70px;
+                    background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456);
+    
+                    margin-left: 30px;
+                    font-family: PT Sans;
+                    font-size: 1.17em;
+                    color: #000;" name="" id="">
+                    <option value="">LEARN</option>
+                    <option value="">OUR STORY</option>
+                    <option value="">WHY KIMALE</option>
+                    <option value="">TRANCEBILITY</option>
+                    <option value=""> BEYOUND</option>
+                </select>
+
+
+            </div>
+            <div>
+
+                <a style="  
+                    text-decoration: none;
+                    padding-left: 13px;
+                    padding-right: 13px;
+                    height: 70px;
+                    line-height: 70px;
+                    font-family: PT Sans;
+                    font-size: 1.17em;
+                    color: #000;
+                    " href="">
+                    GROW
+                </a>
+            </div>
+        </div>
+        <div>
+            <img style="width: 40%;align-items: center ;margin: auto; "
+                src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1614326029" alt="">
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+    <div id="grey">
+        <div id="main">
+            <div>
+                <img class="boderbox"
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Baby-Corn--Exoticcover_png_360x.jpg?v=1660302234"
+                    alt="">
+                <br><br>
+
+                <p class="p_tag">Kimaye Custard Apple (Pack of 500 gm & 1 kg)</p>
+                <br>
+                <h2 style="font-size: 35px;color: red;" class="p_tag">₹105 - ₹210
+                </h2>
+            </div>
+            <div>
+                <img class="boderbox"
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Zucchinicombo_360x.jpg?v=1662979038"
+                    alt="">
+                <br><br>
+                <p class="p_tag">Kimaye Cherries(Imported) (Pack of 125g)</p>
+                <br>
+                <h2 style="font-size: 35px;color: red;" class="p_tag">₹419
+
+                </h2>
+
+            </div>
+            <div>
+                <img class="boderbox"
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Capsicumleadimage_360x.jpg?v=1660378877"
+                    alt="">
+                <br><br>
+
+                <p class="p_tag">Kimaye Custard Apple (Pack of 500 gm & 1 kg)</p>
+                <br>
+                <h2 style="font-size: 35px;color: red;" class="p_tag">₹105 - ₹210
+                </h2>
+            </div>
+            <div>
+                <img class="boderbox"
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/RED-CAPSICUMcover_360x.jpg?v=1656589782"
+                    alt="">
+                <br><br>
+
+                <p class="p_tag">Kimaye Custard Apple (Pack of 500 gm & 1 kg)</p>
+                <br>
+                <h2 style="font-size: 35px;color: red;" class="p_tag">₹205 - ₹310
+                </h2>
+            </div>
+            <div>
+                <img class="boderbox"
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Capsicum_yellow_cover_360x.jpg?v=1656566943"
+                    alt="">
+                <br><br>
+
+                <p class="p_tag">Kimaye Custard Apple (Pack of 500 gm & 1 kg)</p>
+                <br>
+                <h2 style="font-size: 35px;color: red;" class="p_tag">₹200 - ₹210
+                </h2>
+            </div>
+            <div>
+                <img class="boderbox"
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Lettuce-Icebergcover_png_360x.jpg?v=1655979138"
+                    alt="">
+                <br><br>
+
+                <p class="p_tag">Kimaye Custard Apple (Pack of 500 gm & 1 kg)</p>
+                <br>
+                <h2 style="font-size: 35px;color: red;" class="p_tag">₹105 - ₹200
+                </h2>
+            </div>
+            <div>
+                <img class="boderbox"
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Tomatocover_360x.jpg?v=1655883305"
+                    alt="">
+                <br><br>
+
+                <p class="p_tag">Kimaye Custard Apple (Pack of 500 gm & 1 kg)</p>
+                <br>
+                <h2 style="font-size: 35px;color: red;" class="p_tag">₹105 - ₹210
+                </h2>
+            </div>
+            <div>
+                <img class="boderbox"
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/KAlecover_png_360x.jpg?v=1656504182"
+                    alt="">
+                <br><br>
+
+                <p class="p_tag">Kimaye Custard Apple (Pack of 500 gm & 1 kg)</p>
+                <br>
+                <h2 style="font-size: 35px;color: red;" class="p_tag">₹105 - ₹210
+                </h2>
+            </div>
+            <div>
+                <img class="boderbox"
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/pak-choicover_360x.jpg?v=1655887460"
+                    alt="">
+                <br><br>
+
+                <p class="p_tag">Kimaye Custard Apple (Pack of 500 gm & 1 kg)</p>
+                <br>
+                <h2 style="font-size: 35px;color: red;" class="p_tag">₹100 - ₹210
+                </h2>
+            </div>
+            <div>
+                <img class="boderbox"
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/ParsleyFlatExoticcover_360x.jpg?v=1656421939"
+                    alt="">
+                <br><br>
+
+                <p class="p_tag">Kimaye Custard Apple (Pack of 500 gm & 1 kg)</p>
+                <br>
+                <h2 style="font-size: 35px;color: red;" class="p_tag">₹105 - ₹210
+                </h2>
+            </div>
+            <div>
+                <img class="boderbox"
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Muskmelon-cover_360x.jpg?v=1633763200"
+                    alt="">
+                <br><br>
+
+                <p class="p_tag">Kimaye Custard Apple (Pack of 500 gm & 1 kg)</p>
+                <br>
+                <h2 style="font-size: 35px;color: red;" class="p_tag">₹105 - ₹210
+                </h2>
+            </div>
+            <div>
+                <img class="boderbox"
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Spinachcover_png_360x.jpg?v=1655984781"
+                    alt="">
+                <br><br>
+
+                <p class="p_tag">Kimaye Custard Apple (Pack of 500 gm & 1 kg)</p>
+                <br>
+                <h2 style="font-size: 35px;color: red;" class="p_tag">₹105 - ₹210
+                </h2>
+            </div>
+            <div>
+                <img class="boderbox"
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/CapsicumCombo_360x.jpg?v=1662978519"
+                    alt="">
+                <br><br>
+
+                <p class="p_tag">Kimaye Custard Apple (Pack of 500 gm & 1 kg)</p>
+                <br>
+                <h2 style="font-size: 35px;color: red;" class="p_tag">₹105 - ₹210
+                </h2>
+            </div>
+            <div>
+                <img class="boderbox"
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Zucchiniyellow_360x.jpg?v=1662979122"
+                    alt="">
+                <br><br>
+
+                <p class="p_tag">Kimaye Custard Apple (Pack of 500 gm & 1 kg)</p>
+                <br>
+                <h2 style="font-size: 35px;color: red;" class="p_tag">₹105 - ₹210
+                </h2>
+            </div>
+            <div>
+                <img class="boderbox"
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Zucchinicover_360x.jpg?v=1658484948"
+                    alt="">
+                <br><br>
+
+                <p class="p_tag">Kimaye Custard Apple (Pack of 500 gm & 1 kg)</p>
+                <br>
+                <h2 style="font-size: 35px;color: red;" class="p_tag">₹105 - ₹210
+                </h2>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
